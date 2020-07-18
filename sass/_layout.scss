@@ -1,6 +1,6 @@
 .container {
   max-width: 120rem; // 최대 너비
-  margin: 8rem auto;
+  margin: 6rem auto;
   background-color: var(--color-grey-light-1);
   box-shadow: var(--shadow-dark);
 
@@ -26,11 +26,16 @@
   background-color: var(--color-grey-dark-1);
 
   flex: 0 0 18%; // grow - shrink - basis
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .hotel-view {
   background-color: #fff;
   background-color: orangered;
+  height: 80rem;
 
   flex: 1; // flex: 1 1 0 이랑 같은 의미.
   // basis은 기본이 auto이지만 flex에서는 그 값을 생략할 경우 0이 적용된다고 함
